@@ -1,0 +1,161 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- فونت‌های آفلاین (برای مواقع بدون اینترنت) --- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+/* --- Body --- */
+body {
+  font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: rgb(51, 51, 51);
+  line-height: 32px;
+  font-size: 18px;
+}
+
+/* --- Header --- */
+.header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/header.webp);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #fff;
+  max-width: 780px;
+  line-height: 1.4;
+  margin: 0 20px;
+}
+
+/* --- Profile --- */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 60px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  margin-bottom: 15px;
+}
+
+.profile p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+}
+
+.author {
+  font-weight: normal;
+}
+
+.date {
+  font-style: italic;
+  border-bottom: 2px solid #e6e6e6;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* --- Drink Sections --- */
+.drink {
+  width: 100%;
+  margin: 0 auto 120px auto;
+}
+
+.drink-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.number {
+  color: rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.drink-content {
+  flex: 1;
+}
+
+.drink-content h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location {
+  margin: 0 0 20px 0;
+}
+
+.location a {
+  color: #42b446;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.location a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+.recommendation {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.drink-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
